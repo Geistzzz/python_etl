@@ -8,3 +8,8 @@
 2024-05-01 16:24:48,624 - [WARNING] - my_log.py[10]: warning
 2024-05-01 16:24:48,624 - [ERROR] - my_log.py[12]: error
 2024-05-01 16:24:48,624 - [CRITICAL] - my_log.py[14]: fatal
+2024-05-01 16:26:35,178 - [DEBUG] - my_log.py[6]: debug
+2024-05-01 16:26:35,178 - [INFO] - my_log.py[8]: info
+2024-05-01 16:26:35,178 - [WARNING] - my_log.py[10]: warning
+2024-05-01 16:26:35,179 - [ERROR] - my_log.py[12]: error
+2024-05-01 16:26:35,179 - [CRITICAL] - my_log.py[14]: fatal
