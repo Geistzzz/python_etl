@@ -3,6 +3,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 file_handler = logging.FileHandler(r"test.log")
+stream_handler = logging.StreamHandler()
 
 # 设置logger输出格式
 fmt = logging.Formatter(
@@ -11,3 +12,4 @@ fmt = logging.Formatter(
 file_handler.setFormatter(fmt)
 # 组合
 logger.addHandler(file_handler)
+logger.addHandler(stream_handler)
