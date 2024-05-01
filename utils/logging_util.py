@@ -11,6 +11,10 @@ class Logging:
 def init_logger():
     logger = Logging(level).logger
 
+    # 避免重复输出日志
+    if logger.handlers:
+        return logger
+
     # 构造handler
     stream_handler = logging.StreamHandler()
     file_handler = logging.FileHandler(
