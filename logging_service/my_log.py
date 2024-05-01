@@ -1,5 +1,6 @@
-from logging_service.logging_file import logger
+from utils.logging_util import init_logger
 
+logger = init_logger()
 
 logger.setLevel(10)
 

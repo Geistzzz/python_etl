@@ -1,20 +1,20 @@
 import logging
-from config.project_config import log_name
+from config.project_config import log_root_path, log_filename, level
 
 
 class Logging:
-    def __init__(self, level):
+    def __init__(self, level=20):
         self.logger = logging.getLogger()
         self.logger.setLevel(level)
 
 
 def init_logger():
-    logger = Logging(20).logger
+    logger = Logging(level).logger
 
     # 构造handler
     stream_handler = logging.StreamHandler()
     file_handler = logging.FileHandler(
-        filename=log_name,
+        filename=log_root_path + log_filename,
         mode="a",
         encoding="UTF-8"
     )
