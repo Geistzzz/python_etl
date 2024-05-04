@@ -18,3 +18,13 @@ def get_file_list(path, recursive=False):
             if recursive:
                 file_list += get_file_list(absolute_path, recursive=recursive)
     return file_list
+
+
+def get_bew_by_compare_list(a_list, b_list):
+    """
+    差集
+    :param a_list:
+    :param b_list:
+    :return:
+    """
+    return list(set(a_list) - set(b_list))
